@@ -1,0 +1,36 @@
+.chat {
+    width: 100%;
+    height: 100vh;
+    border-right: 10vw solid transparent;
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+    .this-message {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+
+        .input-message {
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+
+        .enter-message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .send {
+                width: 32.53px;
+                height: 28px;
+                fill: #FFFFFF;
+            }
+        }
+
+        .enter-message:hover .send {
+            fill: #03A9F4;
+        }
+    }
+}

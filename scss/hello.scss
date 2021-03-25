@@ -1,0 +1,23 @@
+.hello {
+    z-index: 100;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 40px;
+    transition: width .4s, height .4s, border-radius .4s;
+    background-color: #F57C00;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &.enter {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        transition: width .4s, height .4s, border-radius .4s;
+    }
+
+    .input-nickname {
+        width: 80%;
+        text-align: center;
+    }
+}

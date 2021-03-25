@@ -1,0 +1,86 @@
+.wrapper-messages {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+
+    &::before {
+        z-index: 100;
+        width: 100%;
+        content: "";
+        position: absolute;
+        top: -100px;
+        height: 100px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 100px 50px #FFE0B2;
+    }
+
+    &::after {
+        z-index: 100;
+        width: 100%;
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        height: 100px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 100px 50px #ffe0b2
+    }
+
+    .messages {
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        overflow: auto;
+        padding-top: 50px;
+        padding-right: 32px;
+        padding-bottom: 50px;
+
+        &::-webkit-scrollbar {
+            background-color: #FFE0B2;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #F57C00;
+        }
+        
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: #03A9F4;
+        }
+
+        .message {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-bottom: 32px;
+
+            .message-info {
+                display: flex;
+                flex-flow: column nowrap;
+
+                .message-user {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    margin-bottom: 12px;
+
+                    .user-nickname {
+                        margin-right: 8px;
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #757575;
+                    }
+
+                    .user-data {
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #757575;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.hello,
+.correspond {
+    display: flex;
+}
+
+.hello.none,
+.correspond.none {
+    display: none;
+}
+
+.hello *,
+.correspond * {
+    opacity: 1;
+}
+
+.hello.transparent,
+.correspond.transparent {
+    opacity: 0;
+}
