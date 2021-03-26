@@ -1,2 +1,6 @@
 /desktop.ini
 /prepros.config
+/package.json
+/package-lock.json
+/node_modules
+/scripts/websocket.js

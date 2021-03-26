@@ -1,0 +1,11 @@
+.animate__animated.animate__fadeIn {
+    animation-duration: 1s;
+    transition: z-index 0s 1s;
+    z-index: 1 !important;
+}
+
+.animate__animated.animate__fadeOut {
+    animation-duration: 1s;
+    transition: z-index 0s 1s;
+    z-index: -1 !important;
+}
