@@ -1,11 +1,18 @@
+#login.animate__animated.animate__fillAll {
+    width: 160vw;
+    height: 160vh;
+    border-radius: 0;
+    transition: width .4s, height .4s, border-radius .4s;
+}
+
 .animate__animated.animate__fadeIn {
     animation-duration: 1s;
-    transition: z-index 0s 1s;
+    transition: z-index 0s 1s !important;
     z-index: 1 !important;
 }
 
 .animate__animated.animate__fadeOut {
     animation-duration: 1s;
-    transition: z-index 0s 1s;
+    transition: z-index 0s 1s !important;
     z-index: -1 !important;
 }

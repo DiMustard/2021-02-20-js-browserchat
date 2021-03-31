@@ -1,9 +1,8 @@
-.login {
+#login {
     z-index: 100;
     width: 50vw;
     height: 50vh;
     border-radius: 40px;
-    transition: width .4s, height .4s, border-radius .4s;
     background-color: #F57C00;
     display: flex;
     flex-flow: column nowrap;
@@ -18,7 +17,7 @@
     }
 
     .input-nickname {
-        width: 80%;
+        width: 40vw;
         text-align: center;
     }
 }

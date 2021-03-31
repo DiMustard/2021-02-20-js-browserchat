@@ -14,26 +14,26 @@
 </head>
 
 <body>
-    <div class="login center animate__animated">
+    <div id="login" class="center animate__animated" data-role="chatLogin">
         <input class="input-nickname" placeholder="Введите ваш никнейм, чтобы…" type="text">
         <button class="enter-nickname">Войти в чат</button>
     </div>
 
 
 
-    <div class="main none animate__animated">
-        <div class="all-users">
+    <div id="main" class="none animate__animated" data-role="chatMain">
+        <div class="all-users" data-role="userThis">
             <hr>
-            <ul class="other-users"></ul>
+            <ul class="other-users" data-role="userList"></ul>
         </div>
 
 
         <div class="chat">
             <div class="wrapper-messages">
-                <ul class="messages"></ul>
+                <ul class="messages" data-role="messList"></ul>
             </div>
 
-            <div class="this-message">
+            <div class="this-message" data-role="messSend">
                 <input class="input-message" placeholder="Начните вводить сообщение…" type="text">
                 <button class="enter-message">
                     <svg class="send">
@@ -47,7 +47,7 @@
 
 
     <script id="user-template" type="text/x-handlebars-template">
-        <li class="user">
+        <li class="user" data-user="{{nickname}}">
             <img class="user-avatar" src="./images/avatar.png">
             <span class="user-nickname">{{nickname}}</span>
         </li>
@@ -68,8 +68,15 @@
     </script>
 
 
+    <script id="system-template" type="text/x-handlebars-template">
+        <li class="message">
+            <span class="system">{{nickname}} {{did}}</span>
+        </li>
+    </script>
 
-    <script src="./scripts/index.js" type="module"></script>
+
+
+    <script src="./scripts/browserChat.js" type="module"></script>
 </body>
 
 </html>

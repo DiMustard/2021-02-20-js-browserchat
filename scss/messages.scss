@@ -39,11 +39,11 @@
         &::-webkit-scrollbar {
             background-color: #FFE0B2;
         }
-        
+
         &::-webkit-scrollbar-thumb {
             background-color: #F57C00;
         }
-        
+
         &::-webkit-scrollbar-thumb:hover {
             background-color: #03A9F4;
         }
@@ -52,6 +52,11 @@
             display: flex;
             flex-flow: row nowrap;
             margin-bottom: 32px;
+
+            .system {
+                color: #757575;
+                font-style: italic;
+            }
 
             .message-info {
                 display: flex;
