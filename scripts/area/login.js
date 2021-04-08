@@ -9,15 +9,15 @@ export default class Login {
 
     listener() {
         this.ui.input.addEventListener("keydown", e => {
-            if (e.key === "Enter") this.getNick()
+            if (e.key === "Enter") this.ui.button.click();
         });
         this.ui.button.addEventListener("click", e => {
-            this.getNick()
+            this.setNick();
         });
     }
 
 
-    getNick() {
+    setNick() {
         let nickname = this.ui.input.value;
         if (nickname) 
             this.register(nickname.trim());

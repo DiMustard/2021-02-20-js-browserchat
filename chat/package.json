@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "s": "node ./scripts/server.js"
+    },
+    "dependencies": {
+        "ws": "^7.4.4"
+    }
+}

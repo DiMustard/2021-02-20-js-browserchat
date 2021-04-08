@@ -6,20 +6,40 @@ export default class UserList {
         this.userCurr = "Текущий юзер не установлен";
     }
 
-    userThis(nickname) {
-        this.newUser(nickname, this.ui.userThis, "top");
-        this.userCurr = document.querySelector(`[data-user=${nickname}]`);
-        this.userCurr.setAttribute("data-role", "current-user");
+
+    getNick() {
+        return this.userCurr;
     }
 
-    userOther(nickname) {
-        this.newUser(nickname, this.ui.userList, "bottom");
-    }
 
-    newUser(nickname, place, index) {
+    userNew(nickname, place, index) {
         let user = this.render("user", {
             nickname: nickname
         });
         this.insert(user, place, index);
+    }
+
+
+    userThis(nickname) {
+        this.userNew(nickname, this.ui.userThis, "top");
+        let userCurr = document.querySelector(`[data-user=${nickname}]`);
+        userCurr.setAttribute("data-role", "current-user");
+        this.userCurr = nickname;
+    }
+
+
+    userOther(nickname) {
+        if (nickname !== this.userCurr) {
+            this.userNew(nickname, this.ui.userList, "top");
+        }
+    }
+
+
+    userRemove(nickname) {
+        if (nickname !== this.userCurr) {
+            let users = this.ui.userList;
+            let user = users.querySelector(`[data-user="${nickname}"]`);
+            users.removeChild(user);
+        }
     }
 }
