@@ -48,7 +48,7 @@
 
     <script id="user-template" type="text/x-handlebars-template">
         <li class="user" data-user="{{nickname}}">
-            <img class="user-avatar" src="./images/avatar.png">
+            <img class="user-avatar" src="http://localhost:7777/photos/{{nickname}}.png">
             <span class="user-nickname">{{nickname}}</span>
         </li>
     </script>
@@ -56,7 +56,7 @@
 
     <script id="message-template" type="text/x-handlebars-template">
         <li class="message">
-            <img class="user-avatar" src="./images/avatar.png">
+            <img class="user-avatar" src="http://localhost:7777/photos/{{nickname}}.png">
             <div class="message-info">
                 <div class="message-user">
                     <span class="user-nickname">{{nickname}}</span>

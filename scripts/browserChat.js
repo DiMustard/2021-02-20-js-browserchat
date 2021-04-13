@@ -31,7 +31,7 @@ export default class BrowserChat {
                     userList: document.querySelector('[data-role="userList"]'),
                     userThis: document.querySelector('[data-role="userThis"]')
                 },
-                this.render.bind(this), this.insert.bind(this))
+                this.render.bind(this), this.insert.bind(this), this.loader.bind(this))
         };
 
 
@@ -40,27 +40,36 @@ export default class BrowserChat {
 
 
     async register(nickname) {
-        if (nickname) {
-            await this.WSClient.connect();
-            this.WSClient.sendHello(nickname);
+        await this.WSClient.connect();
+        this.WSClient.sendHello(nickname);
 
-            this.area.Login.fill(this.area.Login.ui.chatLogin);
-            setTimeout(() => {
-                this.area.Login.hide(this.area.Login.ui.chatLogin);
-                this.area.Login.nonone(this.area.Login.ui.chatMain);
-                this.area.Login.show(this.area.Login.ui.chatMain);
-            }, 400);
-            this.area.Users.userThis(nickname);
-
-        } else {
-            console.error("Не передан параметр");
-        }
+        this.area.Login.fill(this.area.Login.ui.chatLogin);
+        setTimeout(() => {
+            this.area.Login.hide(this.area.Login.ui.chatLogin);
+            this.area.Login.nonone(this.area.Login.ui.chatMain);
+            this.area.Login.show(this.area.Login.ui.chatMain);
+        }, 400);
+        this.area.Users.userThis(nickname);
+        this.area.Users.userPhoto(
+            `http://localhost:7777/photos/${nickname}.png?t=${Date.now()}`);
     }
 
 
     sendler(message) {
         this.WSClient.sendTextMessage(message);
         this.area.Messages.clear();
+    }
+
+
+    loader(photo) {
+        this.area.Users.userPhoto(photo);
+        fetch("http://localhost:7777/upload-photo", {
+            method: "post",
+            body: JSON.stringify({
+                name: this.area.Users.getNick(),
+                image: photo,
+            }),
+        });
     }
 
 
@@ -76,9 +85,8 @@ export default class BrowserChat {
             this.area.Messages.addSystem(from, "вошел в чат");
 
         } else if (type === "user-list") {
-            for (const item of data) {
+            for (const item of data)
                 this.area.Users.userOther(item);
-            }
 
         } else if (type === "bye-bye") {
             this.area.Users.userRemove(from);
@@ -86,6 +94,16 @@ export default class BrowserChat {
 
         } else if (type === "text-message") {
             this.area.Messages.addMessage(from, data.message);
+
+        } else if (type === "photo-changed") {
+            const avatars = document.querySelectorAll(
+                `[data-user=${data.name}]>img`);
+            console.log(avatars);
+
+            for (const avatar of avatars) {
+                avatar.getAttribute("src",
+                    `http://localhost:7777/photos/${data.name}.png?t=${Date.now()}`);
+            }
         }
     }
 
