@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DiMustard/2021-02-20-js-browserchat.git"
+    "url": "git+https://github.com/dikonsepta/2021-02-20-js-browserchat.git"
   },
   "author": "https://t.me/di_konsepta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DiMustard/2021-02-20-js-browserchat/issues"
+    "url": "https://github.com/dikonsepta/2021-02-20-js-browserchat/issues"
   },
-  "homepage": "https://github.com/DiMustard/2021-02-20-js-browserchat#readme",
+  "homepage": "https://github.com/dikonsepta/2021-02-20-js-browserchat#readme",
   "dependencies": {
     "ws": "^7.4.4"
   }

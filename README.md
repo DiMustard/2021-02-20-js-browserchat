@@ -2,14 +2,14 @@
 
 > проект №2 курса «[Комплексное обучение JavaScript](https://loftschool.com/course/javascript)»
 
-![](https://github.com/DiMustard/2021-02-20-js-browserchat/blob/master/images/screenshots/cover.png)
+![](https://github.com/dikonsepta/2021-02-20-js-browserchat/blob/master/images/screenshots/cover.png)
 
 ---
 
 ### Как установить веб-приложение?
-1. [Скачать архив](https://github.com/DiMustard/2021-02-20-js-browserchat/archive/refs/heads/master.zip) :arrow_down: и разархивировать или в терминале
+1. [Скачать архив](https://github.com/dikonsepta/2021-02-20-js-browserchat/archive/refs/heads/master.zip) :arrow_down: и разархивировать или в терминале
 ```bash
-git clone https://github.com/DiMustard/2021-02-20-js-browserchat.git
+git clone https://github.com/dikonsepta/2021-02-20-js-browserchat.git
 ```
 2. В терминате перейти в папку проекта
 ```bash
@@ -28,11 +28,11 @@ npm run server
 ---
 
 ### Мой дизайн, вдохновленный [Material Design](https://ru.wikipedia.org/wiki/Material_Design)
-![](https://github.com/DiMustard/2021-02-20-js-browserchat/blob/master/images/screenshots/1.png)
+![](https://github.com/dikonsepta/2021-02-20-js-browserchat/blob/master/images/screenshots/1.png)
 
 
 ### Веб-приложение предложит ввести никнейм
-![](https://github.com/DiMustard/2021-02-20-js-browserchat/blob/master/images/screenshots/2.png)
+![](https://github.com/dikonsepta/2021-02-20-js-browserchat/blob/master/images/screenshots/2.png)
 
 
 ### Как чатиться между вкладками
@@ -40,7 +40,7 @@ npm run server
 - дублировать вкладку
 - ввести другой никнейм и войти в чат во второй вкладке
   
-![](https://github.com/DiMustard/2021-02-20-js-browserchat/blob/master/images/screenshots/3.png)
+![](https://github.com/dikonsepta/2021-02-20-js-browserchat/blob/master/images/screenshots/3.png)
 
 
 ### Как менять фотографию
@@ -50,11 +50,11 @@ npm run server
 - и в других вкладках тоже!
 - в списке пользователей также отобразятся изменения
   
-![](https://github.com/DiMustard/2021-02-20-js-browserchat/blob/master/images/screenshots/4.png)
+![](https://github.com/dikonsepta/2021-02-20-js-browserchat/blob/master/images/screenshots/4.png)
 
-![](https://github.com/DiMustard/2021-02-20-js-browserchat/blob/master/images/screenshots/5.png)
+![](https://github.com/dikonsepta/2021-02-20-js-browserchat/blob/master/images/screenshots/5.png)
 
 
 ---
 
-### [Скачать архив с веб-приложением](https://github.com/DiMustard/2021-02-20-js-browserchat/archive/refs/heads/master.zip) :arrow_down:
+### [Скачать архив с веб-приложением](https://github.com/dikonsepta/2021-02-20-js-browserchat/archive/refs/heads/master.zip) :arrow_down:
