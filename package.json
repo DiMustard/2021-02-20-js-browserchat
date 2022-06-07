@@ -1,22 +1,22 @@
 {
-  "name": "2021-02-20-js-browserchat",
-  "version": "1.0.0",
-  "description": "БРАУЗЕР-ЧАТ — десктоп-приложение, с помощью которого можно чатиться из разных вкладок браузера; второй проект курса «Комплексное обучение JavaScript» от LoftSchool",
-  "main": "browserChat.js",
-  "scripts": {
-    "server": "node ./scripts/wsServer.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dikonsepta/2021-02-20-js-browserchat.git"
-  },
-  "author": "https://t.me/di_konsepta",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dikonsepta/2021-02-20-js-browserchat/issues"
-  },
-  "homepage": "https://github.com/dikonsepta/2021-02-20-js-browserchat#readme",
-  "dependencies": {
-    "ws": "^7.4.4"
-  }
+    "name": "browserchat",
+    "version": "1.0.0",
+    "description": "БРАУЗЕР-ЧАТ — десктоп-приложение, с помощью которого можно чатиться из разных вкладок браузера; второй проект курса «Комплексное обучение JavaScript» от LoftSchool",
+    "main": "browserChat.js",
+    "scripts": {
+        "server": "node ./scripts/wsServer.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dikonsepta/browserchat.git"
+    },
+    "author": "https://t.me/di_konsepta",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dikonsepta/browserchat/issues"
+    },
+    "homepage": "https://github.com/dikonsepta/browserchat#readme",
+    "dependencies": {
+        "ws": "^7.4.4"
+    }
 }
