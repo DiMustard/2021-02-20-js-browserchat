@@ -1,20 +1,24 @@
-.colors {
-    color: #F57C00;
-    color: #FF9800;
-    color: #FFE0B2;
+:root {
+    color-scheme: only light;
+}
 
-    color: #0288D1;
-    color: #03A9F4;
-    color: #B3E5FC;
+.colors {
+    color: #f57c00;
+    color: #ff9800;
+    color: #ffe0b2;
+
+    color: #0288d1;
+    color: #03a9f4;
+    color: #b3e5fc;
 
     color: #212121;
     color: #757575;
-    color: #BDBDBD;
-    color: #FFFFFF;
+    color: #bdbdbd;
+    color: #ffffff;
 }
 
 * {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 20px;
@@ -32,7 +36,8 @@
     list-style: none;
     outline: none;
     resize: none;
-    transition: background-color .4s, border-color .4s, color .4s, fill .1s, opacity .4s;
+    transition: background-color 0.4s, border-color 0.4s, color 0.4s, fill 0.1s,
+        opacity 0.4s;
 }
 
 *::-webkit-scrollbar {
@@ -50,14 +55,14 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: #FFE0B2;
+    background-color: #ffe0b2;
 }
 
 hr {
     width: 100%;
     height: 2px;
     border-radius: 12px;
-    background-color: #FFE0B2;
+    background-color: #ffe0b2;
     margin-bottom: 40px;
 }
 
@@ -68,13 +73,13 @@ textarea {
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 32px;
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
 }
 
 input:focus,
 textarea:focus {
-    border: 2px solid #03A9F4;
+    border: 2px solid #03a9f4;
 }
 
 input::-webkit-input-placeholder,
@@ -121,12 +126,12 @@ button {
     text-transform: uppercase;
     border-radius: 12px;
     padding: 16px 20px;
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #212121;
 }
 
 button:hover {
-    color: #03A9F4;
+    color: #03a9f4;
     background-color: #212121;
 }
 
@@ -153,7 +158,7 @@ img {
     max-width: 64px;
     max-height: 64px;
     margin-right: 20px;
-    border: 2px solid #F57C00;
+    border: 2px solid #f57c00;
     border-radius: 50%;
 }
 
